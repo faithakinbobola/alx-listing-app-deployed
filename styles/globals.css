@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-shimmer text-xs;
+    }
+}
+
+@layer components {
+    .btn-shimmer {
+        @apply font-semibold py-1 px-3 border rounded-3xl;
+    }
+    .btn-categories {
+        @apply font-semibold py-1 px-3 border rounded-3xl border-[#ECECEC] text-black bg-shimmer hover:text-primary hover:border-primary;
+    }
+}
