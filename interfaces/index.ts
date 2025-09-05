@@ -64,6 +64,8 @@ export interface Images {
 }
 
 export interface Review {
+  id: string
+  propertyId: string;
   avatar: string;
   name: string;
   date: string;

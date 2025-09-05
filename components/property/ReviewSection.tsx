@@ -1,6 +1,30 @@
-import { PropertyProps } from "@/interfaces";
+import { PropertyProps, Review } from "@/interfaces";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
+const ReviewSection: React.FC<{ propertyId: Review }> = ({ propertyId }) => {
+    const [reviews, setReviews] = useState<Review[]>([]);
+    const [loading, setLoding] = useState(true);
+
+    useEffect(() => {
+        const fetchReviews = async () => {
+            try {
+                const response = await axios.get(`/api/properties/${propertyId}/reviews`);
+                setReviews(response.data as Review[]);
+            } catch (error) {
+                console.error("Error fetching reviews:", error);
+            } finally {
+                setLoding(false);
+            }
+        }
+
+        fetchReviews();
+    }, [propertyId]);
+
+    if (loading) {
+        return <p>Loading Reviews...</p>;
+    }
+
     return (
         <div className="mt-8">
             <span className="flex text-lg gap-2 font-bold">
@@ -10,8 +34,8 @@ const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
 
             <div className="grid md:grid-cols-2 gap-10">
                 {
-                    reviews.map((review, index) => (
-                        <div key={index} className="pb-4 mb-4">
+                    reviews.map((review) => (
+                        <div key={review.id} className="pb-4 mb-4">
                             <div className="items-center">
                                 <div className="flex pb-2">
                                     <img src={review.avatar} alt={review.name} className="w-12 h-12 rounded-full mr-4" />
