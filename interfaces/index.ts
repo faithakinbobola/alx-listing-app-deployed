@@ -7,6 +7,11 @@ export interface CardProps {
   onClick?: () => void;
 }
 
+export interface PropertyCardProps {
+  property: PropertyProps;
+  key: string | number;
+}
+
 export interface ButtonProps {
   label?: string;
   onClick?: () => void;
@@ -15,6 +20,7 @@ export interface ButtonProps {
 }
 
 export interface PropertyProps {
+    id: string | number;
     name: string;
     address: {
         state: string;
