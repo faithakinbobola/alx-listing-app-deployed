@@ -59,10 +59,10 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
             </div>
             {/* Image Grid */}
             <div className="hidden md:grid md:grid-cols-4 md:grid-rows-2 md:gap-2 mt-4">
-                <div className="col-span-2 row-span-2"><img src={property.image.image3} alt={property.name} className="col-span-2 w-full h-full object-cover rounded-tl-xl rounded-bl-xl" /></div>
-                <div className="col-span-2"><img src={property.image.image1} alt={property.name} className="col-span-2 w-full h-96 object-cover rounded-tr-xl" /></div>
-                <div><img src={property.image.image2} alt={property.name} className="col-span-2 w-full h-96 object-cover" /></div>
-                <div><img src={property.image.image4} alt={property.name} className="col-span-2 w-full h-96 object-cover rounded-br-xl" /></div>
+                <div className="col-span-2 row-span-2"><img src={typeof property.image === 'object' ? property.image.image3 : ''} alt={property.name} className="col-span-2 w-full h-full object-cover rounded-tl-xl rounded-bl-xl" /></div>
+                <div className="col-span-2"><img src={typeof property.image === 'object' ? property.image.image1 : ''} alt={property.name} className="col-span-2 w-full h-96 object-cover rounded-tr-xl" /></div>
+                <div><img src={typeof property.image === 'object' ? property.image.image2 : ''} alt={property.name} className="col-span-2 w-full h-96 object-cover" /></div>
+                <div><img src={typeof property.image === 'object' ? property.image.image4 : ''} alt={property.name} className="col-span-2 w-full h-96 object-cover rounded-br-xl" /></div>
                 {/* Add more images */}
             </div>
 

@@ -7,11 +7,6 @@ export interface CardProps {
   onClick?: () => void;
 }
 
-export interface PropertyCardProps {
-  property: PropertyProps;
-  key: string | number;
-}
-
 export interface ButtonProps {
   label?: string;
   onClick?: () => void;
@@ -19,24 +14,63 @@ export interface ButtonProps {
   type?: 'button' | 'submit' | 'reset';
 }
 
+export interface PropertyCardProps {
+  property: PropertyProps;
+  key: string | number;
+}
+
 export interface PropertyProps {
-    id: string | number;
-    name: string;
-    address: {
-        state: string;
-        city: string;
-        country: string;
-    };
-    rating: number;
-    category: string[]; 
-    price: number;
-    offers: {
-        bed: string;
-        shower: string;
-        occupants: string; 
-    };
-    image: string;
-    discount: string; 
+  name: string;
+  address: Address;
+  rating: number;
+  category: string[];
+  price: number;
+  offers: Offers;
+  image?: string | Images;
+  discount: string;
+  reviews: Review[];
+  description: string;
+  offerOne: OfferOne[];
+  offerTwo: OfferTwo[];
+}
+
+export interface OfferOne {
+  offerImage: string;
+  offerText: string;
+}
+
+export interface OfferTwo {
+  offerImage: string;
+  offerText: string;
+}
+
+export interface Address {
+  state: string;
+  city: string;
+  country: string;
+}
+
+export interface Offers {
+  bed: string;
+  shower: string;
+  occupants: string;
+}
+
+export interface Images {
+  image1: string;
+  image2: string;
+  image3: string;
+  image4: string;
+}
+
+export interface Review {
+  avatar: string;
+  name: string;
+  date: string;
+  occasion: string;
+  rating: number;
+  years: string;
+  comment: string;
 }
 
 export interface ImagesProps {
@@ -50,7 +84,8 @@ export interface LayoutProps {
 }
 
 export interface PillProps {
-  label:string;
+  label: string;
   isActive: boolean;
   onClick: () => void;
 }
+
