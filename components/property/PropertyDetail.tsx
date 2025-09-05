@@ -36,7 +36,7 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
                     <button><img src="/assets/share-icon.svg" alt="" width={13} height={15}/></button>
                 </div>
             </div>
-            <div className="col-span-full md:col-span-2 row-span-2 md:hidden"><img src={property.image.image3} alt={property.name} className="col-span-2 w-full h-full object-cover rounded-xl md:rounded-tl-xl md:rounded-bl-xl" /></div>
+            <div className="col-span-full md:col-span-2 row-span-2 md:hidden"><img src={typeof property.image === 'object' ? property.image.image3 : ''} alt={property.name} className="col-span-2 w-full h-full object-cover rounded-xl md:rounded-tl-xl md:rounded-bl-xl" /></div>
             <h1 className="text-lg md:text-4xl font-bold">{property.name}</h1>
             <div className="flex justify-between gap-4">
                 <div>
