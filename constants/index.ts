@@ -6,6 +6,7 @@ export const API_BASE_URL = "https://api.example.com";
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
   {
+    id: "1",
     name: "Villa Ocean Breeze",
     address: {
       state: "Seminyak",
@@ -20,7 +21,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-6"
     },
-    image: "https://example.com/image1.jpg",
+    images: {
+      imageSrc: "https://example.com/image1.jpg"
+    },
     discount: "",
     reviews: [],
     description: "",
@@ -28,6 +31,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "2",
     name: "Mountain Escape Chalet",
     address: {
       state: "Aspen",
@@ -42,7 +46,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "5-7"
     },
-    image: "https://example.com/image2.jpg",
+    images: {
+      imageSrc: "https://example.com/image2.jpg"
+    },
     discount: "30",
     reviews: [],
     description: "",
@@ -50,6 +56,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "3",
     name: "Cozy Desert Retreat",
     address: {
       state: "Palm Springs",
@@ -64,7 +71,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-3"
     },
-    image: "https://example.com/image3.jpg",
+    images: {
+      imageSrc: "https://example.com/image1.jpg"
+    },
     discount: "",
     reviews: [],
     description: "",
@@ -72,6 +81,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "4",
     name: "City Lights Penthouse",
     address: {
       state: "New York",
@@ -86,7 +96,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "2-4"
     },
-    image: "https://example.com/image4.jpg",
+    images: {
+      imageSrc: "https://example.com/image1.jpg"
+    },
     discount: "15",
     reviews: [],
     description: "",
@@ -94,6 +106,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "5",
     name: "Riverside Cabin",
     address: {
       state: "Queenstown",
@@ -108,7 +121,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "4-6"
     },
-    image: "https://example.com/image5.jpg",
+    images: {
+      imageSrc: "https://example.com/image5.jpg"
+    },
     discount: "20",
     reviews: [],
     description: "",
@@ -116,6 +131,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "6",
     name: "Modern Beachfront Villa",
     address: {
       state: "Sidemen",
@@ -130,7 +146,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "8-10"
     },
-    image: "https://example.com/image6.jpg",
+    images: {
+      imageSrc: "https://example.com/image6.jpg"
+    },
     discount: "",
     reviews: [],
     description: "",
@@ -138,6 +156,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "7",
     name: "Lakeside Chalet",
     address: {
       state: "Banff",
@@ -152,7 +171,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image7.jpg",
+    images: {
+      imageSrc: "https://example.com/image7.jpg"
+    },
     discount: "10",
     reviews: [],
     description: "",
@@ -160,6 +181,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "8",
     name: "Tropical Garden Villa",
     address: {
       state: "Koh Samui",
@@ -174,7 +196,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "5-6"
     },
-    image: "https://example.com/image8.jpg",
+    images: {
+      imageSrc: "https://example.com/image8.jpg"
+    },
     discount: "25",
     reviews: [],
     description: "",
@@ -182,6 +206,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "9",
     name: "Urban Loft",
     address: {
       state: "Berlin",
@@ -196,7 +221,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-3"
     },
-    image: "https://example.com/image9.jpg",
+    images: {
+      imageSrc: "https://example.com/image9.jpg"
+    },
     discount: "",
     reviews: [],
     description: "",
@@ -204,6 +231,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "10",
     name: "Secluded Forest Cabin",
     address: {
       state: "Whistler",
@@ -218,7 +246,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "5-7"
     },
-    image: "https://example.com/image10.jpg",
+    images: {
+      imageSrc: "https://example.com/image10.jpg"
+    },
     discount: "40",
     reviews: [],
     description: "",
@@ -226,6 +256,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "11",
     name: "Cliffside Villa",
     address: {
       state: "Amalfi",
@@ -240,7 +271,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "6-8"
     },
-    image: "https://example.com/image11.jpg",
+    images: {
+      imageSrc: "https://example.com/image11.jpg"
+    },
     discount: "50",
     reviews: [],
     description: "",
@@ -248,6 +281,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "12",
     name: "Coastal Escape Villa",
     address: {
       state: "Noosa",
@@ -262,7 +296,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-6"
     },
-    image: "https://example.com/image12.jpg",
+    images: {
+      imageSrc: "https://example.com/image12.jpg"
+    },
     discount: "",
     reviews: [],
     description: "",
@@ -270,6 +306,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "13",
     name: "Historical Villa",
     address: {
       state: "Florence",
@@ -284,7 +321,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "2-4"
     },
-    image: "https://example.com/image13.jpg",
+    images: {
+      imageSrc: "https://example.com/image13.jpg"
+    },
     discount: "35",
     reviews: [],
     description: "",
@@ -292,6 +331,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "14",
     name: "Downtown Apartment",
     address: {
       state: "Tokyo",
@@ -306,7 +346,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2"
     },
-    image: "https://example.com/image14.jpg",
+    images: {
+      imageSrc: "https://example.com/image14.jpg"
+    },
     discount: "",
     reviews: [],
     description: "",
@@ -314,6 +356,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "16",
     name: "Luxury Safari Lodge",
     address: {
       state: "Serengeti",
@@ -328,7 +371,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "6-8"
     },
-    image: "https://example.com/image15.jpg",
+    images: {
+      imageSrc: "https://example.com/image16.jpg"
+    },
     discount: "20",
     reviews: [],
     description: "",
@@ -336,6 +381,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "17",
     name: "Countryside Cottage",
     address: {
       state: "Cotswolds",
@@ -350,7 +396,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-4"
     },
-    image: "https://example.com/image16.jpg",
+    images: {
+      imageSrc: "https://example.com/image1.jpg"
+    },
     discount: "25",
     reviews: [],
     description: "",
@@ -358,6 +406,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "17",
     name: "Riverfront Mansion",
     address: {
       state: "Paris",
@@ -372,7 +421,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "6-8"
     },
-    image: "https://example.com/image17.jpg",
+    images: {
+      imageSrc: "https://example.com/image17.jpg"
+    },
     discount: "30",
     reviews: [],
     description: "",
@@ -380,6 +431,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "18",
     name: "Ski Chalet",
     address: {
       state: "Zermatt",
@@ -394,7 +446,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image18.jpg",
+    images: {
+      imageSrc: "https://example.com/image18.jpg"
+    },
     discount: "",
     reviews: [],
     description: "",
@@ -402,6 +456,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "19",
     name: "Island Paradise Villa",
     address: {
       state: "Mahe",
@@ -416,7 +471,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "5",
       occupants: "8-10"
     },
-    image: "https://example.com/image19.jpg",
+    images: {
+      imageSrc: "https://example.com/image19.jpg"
+    },
     discount: "60",
     reviews: [],
     description: "",
@@ -424,6 +481,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     offerTwo: []
   },
   {
+    id: "20",
     name: "Clifftop Retreat",
     address: {
       state: "Cape Town",
@@ -438,7 +496,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image20.jpg",
+    images: {
+      imageSrc: "https://example.com/image20.jpg"
+    },
     discount: "",
     reviews: [],
     description: "",

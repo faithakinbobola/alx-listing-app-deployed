@@ -20,13 +20,15 @@ export interface PropertyCardProps {
 }
 
 export interface PropertyProps {
+  id: string;
   name: string;
   address: Address;
   rating: number;
   category: string[];
   price: number;
   offers: Offers;
-  image?: string | Images;
+  images: ImagesProps;
+  image?: Images;
   discount: string;
   reviews: Review[];
   description: string;
@@ -77,7 +79,7 @@ export interface Review {
 
 export interface ImagesProps {
   imageSrc: string;
-  name: string;
+  name?: string;
 }
 
 export interface LayoutProps {
@@ -91,3 +93,10 @@ export interface PillProps {
   onClick: () => void;
 }
 
+export interface BookingDatailsProps {
+  propertyName: string,
+  startDate: string,
+  totalNights: number, 
+  bookingFee: number,
+  price: number,
+}

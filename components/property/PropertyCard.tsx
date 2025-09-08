@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ key, property }) => {
   return (
-          <div>
+          <div key={key}>
               <Image
-                  src={property.image}
+                  src={property.images.imageSrc}
                   width={100}
                   height={100}
                   alt="Property Image"
               />
               <div>
-                  {property.category.map((e) => (
-                      <button className='btn-categories'>{e}</button>
+                  {property.category.map((e, key) => (
+                      <button className='btn-categories' key={key}>{e}</button>
                   ))}
               </div>
               <div>

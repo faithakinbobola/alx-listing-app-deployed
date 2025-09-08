@@ -25,7 +25,7 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
 
     ]
 
-    const [activeTab, setActiveTab] = useState<any>(0)
+    const [activeTab, setActiveTab] = useState<number>(0)
 
     return (
         <div className="container mx-auto p-6">
@@ -159,7 +159,7 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
                     </div>
                     <hr />
                     <div>
-                        <ReviewSection reviews={property.reviews} />
+                        <ReviewSection propertyId={property.id} />
                     </div>
                 </div>
                 <div>

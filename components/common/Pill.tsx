@@ -1,6 +1,6 @@
 import { PillProps } from "@/interfaces";
 
-const Pill: React.FC<PillProps> = ({ onClick, isActive, label }) => {
+const Pill: React.FC<PillProps> = ({ isActive, label }) => {
     return (
         <button
             className={`btn-shimmer transition-colors duration-200 ${

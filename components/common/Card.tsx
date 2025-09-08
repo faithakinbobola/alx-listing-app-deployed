@@ -1,18 +1,18 @@
 import { PropertyProps } from '@/interfaces';
 import Image from 'next/image';
 import React from 'react';
-const Card: React.FC<PropertyProps> = ({ name, address, rating, category, price, offers, image, discount }) => {
+const Card: React.FC<PropertyProps> = ({ name, address, rating, category, price, offers, images, discount }) => {
     return (
         <div>
             <Image
-                src={image}
+                src={images.imageSrc}
                 width={100}
                 height={100}
                 alt="Property Image"
             />
             <div>
-                {category.map((e) => (
-                    <button className='btn-categories'>{e}</button>
+                {category.map((e, key) => (
+                    <button key={key} className='btn-categories'>{e}</button>
                 ))}
             </div>
             <div>

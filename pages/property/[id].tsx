@@ -1,10 +1,7 @@
-import BookingSection from "@/components/property/BookingSection";
 import PropertyDetail from "@/components/property/PropertyDetail";
-import ReviewSection from "@/components/property/ReviewSection";
-import { PROPERTYLISTINGSAMPLE } from "@/constants";
 import { PropertyProps } from "@/interfaces";
 import axios from "axios";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function PropertyPage() {
@@ -17,7 +14,7 @@ export default function PropertyPage() {
         const fetchProperty = async () => {
             if (!id) return;
             try {
-                const response = await axios.get<PropertyProps>(`/api/properties/${id}`);
+                const response = await axios.get<PropertyProps>(`${process.env.NEXT_PUBLIC_API_BASE_URL}/properties/${id}`);
                 setProperty(response.data);
             } catch (error) {
                 console.log("Error faetching property details:", error);

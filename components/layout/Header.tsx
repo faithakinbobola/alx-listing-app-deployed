@@ -100,10 +100,10 @@ const Header: React.FC = () => {
                                 src={imageSrc}
                                 width={30}
                                 height={30}
-                                alt={name}
+                                alt={name ?? ''}
                                 className="justify-self-center"
                             />
-                            <p className="text-[11px] pt-1 text-center w-[100px]">{name}</p>
+                            <p className="text-[11px] pt-1 text-center w-[100px]">{name ?? ''}</p>
                         </div>
                     ))
                 }
@@ -116,10 +116,10 @@ const Header: React.FC = () => {
                                 src={imageSrc}
                                 width={30}
                                 height={30}
-                                alt={name}
+                                alt={name ?? ''}
                                 className="justify-self-center"
                             />
-                            <p className="text-[11px] pt-1 text-center w-[100px]">{name}</p>
+                            <p className="text-[11px] pt-1 text-center w-[100px]">{name ?? ''}</p>
                         </div>
                     ))
                 }
@@ -132,10 +132,10 @@ const Header: React.FC = () => {
                                 src={imageSrc}
                                 width={30}
                                 height={30}
-                                alt={name}
+                                alt={name ?? ''}
                                 className="justify-self-center"
                             />
-                            <p className="text-[8px] pt-1 text-center">{name}</p>
+                            <p className="text-[8px] pt-1 text-center">{name ?? ''}</p>
                         </div>
                     ))
                 }
